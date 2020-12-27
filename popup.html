@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TakeABreak</title>
+        <script src="jquery-3.5.1.min.js">
+        </script>
+        <script src="popup.js">
+        </script>
+            <style> 
+                .bodyclass {
+                    background:#618685;
+                }
+    
+                .maintitle {
+                    color:#EDEBE4;
+                }
+    
+                .optionelement {
+                    color:#EDEBE4;
+                } 
+                
+                .button {
+                    background-color: #F6C90E;; 
+                    border: none;
+                    color: white;
+                    padding: 10px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                } 
+
+                .button4 {
+                    border-radius: 6px;
+                }
+            </style>
+    </head>
+    <body class="bodyclass">
+        <h1 class="maintitle">TakeABreak</h1>  
+        <h3 class="optionelement">Status: <span id="status"></span></h2>
+        <h3 class="optionelement">Time Limit (minutes): <span id="limit"></span></h2>  
+        <h3 class="optionelement">Next Break: <span id="breakTime"></span> <span id="mins"></span></h2> 
+        <input type="submit" id="start" value="Start" class="button button4"/>
+        <input type="submit" id="stop" value="Stop" class="button button4"/>
+        <br/>
+        <input type="submit" id="reset" value="Reset" class="button button4"/>
+    </body>
+</html>
